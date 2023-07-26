@@ -1,0 +1,7 @@
+#import module exchange online
+Import-Module ExchangeOnlineManagement
+#Connect to exchange online
+Connect-ExchangeOnline
+#Login with your exchange admin creds
+Get-Mailbox "equipmentname" | Set-CalendarProcessing -ProcessExternalMeetingMessages $true
+#Successful execution of command will result in another PS line appearig and no error messages
